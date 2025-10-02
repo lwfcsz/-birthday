@@ -217,7 +217,7 @@
             
             <div class="text-center text-orange-500 mb-4">
                 <i class="fa fa-angle-double-left scroll-indicator"></i> 
-                <span class="mx-2">左右滚动查看</span>
+                <span class="mx-2">好像不可以左右滚动查看</span>
                 <i class="fa fa-angle-double-right scroll-indicator"></i>
             </div>
         </div>
@@ -248,10 +248,7 @@
                         <div class="absolute top-1/2 left-32 w-3 h-5 bg-secondary rounded-full transform -translate-y-1/2"></div>
                         <div class="absolute top-1/2 left-44 w-3 h-6 bg-secondary rounded-full transform -translate-y-1/2"></div>
                     </div>
-                    <!-- 蛋糕顶 -->
-                    <div class="cake-layer w-56 h-12 bg-pink-200 mx-auto -mt-2 relative">
-                        <div class="absolute bottom-0 left-0 w-full h-3 bg-pink-300"></div>
-                    </div>
+
                     
                     <!-- 奶油装饰 -->
                     <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-48 h-8 bg-white rounded-full -mt-4 relative overflow-hidden">
@@ -296,7 +293,7 @@
                 </div>
                 
                 <div class="text-center">
-                    <p class="text-dark text-xl mb-6">吹蜡烛许愿吧！这8根蜡烛祝你越来越发！</p>
+                    <p class="text-dark text-xl mb-6">吹蜡烛许愿吧！这8根蜡烛祝你越来越发！(蛋糕尽力了)</p>
                     <button id="blow-candle" class="bg-primary hover:bg-pink-600 text-white font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
                         吹灭蜡烛 <i class="fa fa-birthday-cake ml-2"></i>
                     </button>
@@ -324,11 +321,12 @@
                 <p class="mb-4">在你20岁这个特别的日子里，</p>
                 <p class="mb-4">我想对你说：</p>
                 <p class="mb-4">认识你可能是我目前运气最好的时候吧，</p>
-                <p class="mb-4">和你在一起的每一天都充满欢乐，</p>
+                <p class="mb-4">感觉跟你在一起的时候都是开心的 嘿嘿，</p>
                 <p class="mb-4">愿你未来的日子里：</p>
                 <p class="mb-4">笑口常开，好运连连，</p>
                 <p class="mb-4">梦想成真，万事顺意，</p>
                 <p class="mb-4">最重要的是永远保持这份纯真与快乐！</p>
+                <p class="mb-4">永远都那么好看 嘿嘿</p>
                 <p class="text-2xl font-bold text-yellow-200 mt-8 animate-pulse">生日快乐！永乐！</p>
             </div>
             
@@ -353,15 +351,15 @@
         // 100个优点列表
         const virtues = [
             "善良", "乐观", "真诚", "聪明", "幽默", "体贴", "勇敢", "慷慨", "有耐心", "负责任",
-            "有创意", "积极", "热情", "诚实", "可靠", "友善", "智慧", "有爱心", "勤奋", "有毅力",
-            "开朗", "温柔", "坚强", "自信", "谦虚", "包容", "果断", "细心", "有活力", "有担当",
+            "有点创意", "偶尔积极", "热情", "诚实", "可靠", "友善", "偶尔充满智慧", "有爱心", "勤奋", "有毅力",
+            "开朗", "温柔", "坚强", "时常自信", "谦虚", "包容", "果断", "挺细心的", "有一点点活力", "有担当",
             "善解人意", "乐于助人", "有同理心", "有条理", "有远见", "有魅力", "有才华", "有品味", "有风度", "有正义感",
             "乐观向上", "坚持不懈", "勇于尝试", "善于沟通", "懂得倾听", "尊重他人", "热爱生活", "积极进取", "心地善良", "为人正直",
-            "做事认真", "待人诚恳", "学习能力强", "适应能力强", "团队合作好", "独立思考", "创新精神", "时间管理好", "情绪稳定", "不是很挑食",
-            "笑容甜美", "声音好听", "心灵手巧", "审美独特", "文笔优美", "口才出众", "你就是很好", "观察力强", "记忆力好", "分析能力强",
+            "做事认真", "待人诚恳", "学习能力强", "适应能力强", "团队合作好", "偶尔独立思考", "偶尔大脑短路", "漂亮小姐姐", "情绪稳定", "不是很挑食",
+            "笑容甜美", "声音好听", "心灵手巧", "审美独特", "文笔优美", "口才出众", "你就是很好", "观察力强", "记忆力挺好", "分析能力强",
             "解决问题能力强", "善于鼓励他人", "懂得感恩", "知足常乐", "勇于承认错误", "不断自我提升", "珍惜友谊", "重视情感", "爱猫人士", "保护环境",
-            "品味生活", "享受当下", "不畏挑战", "敢于突破", "保持初心", "坚守原则", "灵活变通", "坚持梦想", "传递正能量", "温暖如阳光",
-            "冷静沉着", "风趣幽默", "纯真可爱", "成熟稳重", "天真烂漫", "优雅大方", "简单纯粹", "活力四射", "魅力无限", "独一无二"
+            "品味生活", "享受当下", "反正就是好", "敢于突破", "保持初心", "坚守原则", "灵活变通", "坚持梦想", "传递正能量", "温暖如阳光",
+            "冷静沉着", "风趣幽默", "纯真可爱", "成熟稳重", "天真烂漫", "优雅大方", "简单纯粹", "有点活力四射", "魅力无限", "独一无二"
         ];
         
         // DOM 元素
